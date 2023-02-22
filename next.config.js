@@ -1,5 +1,5 @@
 const repo = 'kamel.io'
-const assetPrefix = `/${repo}/`
+const assetPrefix = `/${repo}`
 const basePath = `/${repo}`
 
 module.exports = {
