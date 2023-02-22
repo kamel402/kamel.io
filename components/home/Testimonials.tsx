@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../global/SectionTitle";
 import { testimonials } from "@/data/content/home";
+import Image from "next/image";
 
 function Testimonials() {
   return (
@@ -15,10 +16,13 @@ function Testimonials() {
             >
               {index === 0 && (
                 <>
-                  <img
-                    className="sqD top-[-50px] left-0 bottom-auto right-auto md:bottom-[-50px] md:top-auto md:right-[-25px] md:left-auto w-20 z-[-100]"
+                  <div className="sqD top-[-50px] left-0 bottom-auto right-auto md:bottom-[-50px] md:top-auto md:right-[-25px] md:left-auto w-20 z-[-100]">
+                    <Image
                     src="/static/doodles/testimonials/yay.svg"
-                  />
+                    width={80} height={64}
+                    />
+                  </div>
+                  
                 </>
               )}
               <p className="text-base italic relative testimonialQuote">
@@ -29,10 +33,12 @@ function Testimonials() {
                 {item.job}
               </p>
               {index === 2 && (
-                <img
-                  className="sqD top-[-30px] right-[-15px] w-11"
-                  src="/static/doodles/testimonials/squiggle2.svg"
-                />
+                <div className="sqD top-[-30px] right-[-15px] w-11">
+                    <Image
+                    src="/static/doodles/testimonials/squiggle2.svg"
+                    width={44} height={50}
+                  />
+                </div>
               )}
             </div>
           );

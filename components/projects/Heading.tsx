@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type HeadingProps = {
   tag?: string;
@@ -13,9 +14,10 @@ function Heading({ tag }: HeadingProps) {
         <>
           <h1 className="text-3xl sm:text-4xl inline-block w-auto mx-auto mb-8 relative">
             Projects built with <b>{tag}</b>
-            <img
+            <Image
               className="sqD w-8 sm:w-10 -top-6 -right-2 sm:-right-8 sm:-top-8 absolute"
               src="/static/doodles/hero/code.svg"
+              width={40} height={40}
             />
           </h1>
         </>

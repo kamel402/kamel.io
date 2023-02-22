@@ -1,9 +1,13 @@
 import React from "react";
+import Image from "next/image";
 
 function CTA() {
   return (
     <div className="pt-36 relative w-full">
-      <img className="w-30 m-auto mb-2" src="/static/doodles/lineBreak.svg" />
+      <div className="w-30 m-auto mb-2">
+        <Image  src="/static/doodles/lineBreak.svg" width={238} height={17}/>
+      </div>
+      
       <div className="pt-14 pb-40">
         <h2 className="text-4xl md:text-5xl font-bold mb-10">
           Interested in Working Together?
@@ -17,11 +21,14 @@ function CTA() {
         </a>
       </div>
 
-      <img
-        className="sqD min-w-[800px] bottom-[-100px] left-1/2 sm:bottom-[-150px] -translate-x-1/2 object-cover sm:min-w-[1100px]"
-        style={{ zIndex: "-10" }}
-        src="/static/doodles/hero/fancyLines.svg"
-      />
+      <div className="sqD min-w-[800px] bottom-[-100px] left-1/2 sm:bottom-[-150px] -translate-x-1/2 object-cover sm:min-w-[1100px]"
+          style={{ zIndex: "-10" }}>
+        <Image
+          src="/static/doodles/hero/fancyLines.svg"
+          width={1160} height={314}
+        />
+      </div>
+      
     </div>
   );
 }

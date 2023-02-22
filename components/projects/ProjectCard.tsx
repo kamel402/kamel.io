@@ -14,9 +14,10 @@ function ProjectCard({ project }) {
         target="_blank"
         className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
       >
-        <img
+        <Image
           className="w-full rounded-md"
           src={project.img}
+          width={355} height={236}
         />
       </a>
       <div className="w-full mt-5">

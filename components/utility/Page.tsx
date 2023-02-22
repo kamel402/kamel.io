@@ -10,7 +10,6 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
       ? "Kamel Gerado - Web Developer, Designer, Creator."
       : `${currentPage} - Kamel.io`
   }`;
-  console.log(currentPage);
   return (
     <div
       className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible"
@@ -18,7 +17,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
     >
       <Head>
         <title>{pageTitle}</title>
-
+        <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

@@ -51,10 +51,12 @@ function Footer() {
                   href={`https://buymeacoffee.com/${footer.support.buymeacoffee}`}
                   target="_blank"
                 >
-                  <img
-                    src="/static/misc/buy-me-a-coffee.svg"
-                    className="h-12 mr-2 hover:opacity-80 opacity-100 transition-opacity"
-                  />
+                    <Image
+                      src="/static/misc/buy-me-a-coffee.svg"
+                      className="h-12 mr-2 hover:opacity-80 opacity-100 transition-opacity"
+                      width={184} height={48}
+                    />
+                  
                 </a>
               </div>
             )}
@@ -64,10 +66,11 @@ function Footer() {
                   href={`https://paypal.me/${footer.support.paypal}`}
                   target="_blank"
                 >
-                  <img
-                    src="/static/misc/paypal.svg"
-                    className="h-12 mr-2 hover:opacity-80 opacity-100 transition-opacity"
-                  />
+                  <Image
+                      src="/static/misc/paypal.svg"
+                      className="h-12 mr-2 hover:opacity-80 opacity-100 transition-opacity"
+                      width={184} height={48}
+                    />
                 </a>
               </div>
             )}

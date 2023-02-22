@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { routes } from "@/data/global";
 
@@ -8,10 +9,10 @@ function Navbar({ currentPage }) {
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-xl flex items-center">
-            <img
+            <Image
               className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
               src="/static/logos/logo_no_text.svg"
-              width="60"
+              width={60} height={60}
             />
             {"Kamel".split("").map((letter, index) => {
               return (
