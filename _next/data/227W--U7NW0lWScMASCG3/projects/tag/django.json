@@ -1,0 +1,1 @@
+{"pageProps":{"filteredProjects":[{"id":1,"title":"commerce","desc":"An eBay-like e-commerce auction application.","img":"/static/projects/commerce.png","link":"https://github.com/kamel402/commerce","github":"https://github.com/kamel402/commerce","tags":["Django","Docker","Redis","Postgres","CSS"]}],"tag":"django"},"__N_SSG":true}
