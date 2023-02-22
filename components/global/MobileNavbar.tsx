@@ -41,7 +41,7 @@ export default function MobileNavbar() {
           <Link href="/">
             <Image
               className="mr-3"
-              src="/static/logos/logo_full.svg"
+              src="/static/logos/logo_no_text.svg"
               width={160} height={59.73}
             />
           </Link>
