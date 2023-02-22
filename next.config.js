@@ -1,4 +1,4 @@
-const repo = 'kamel.io'
+const repo = 'https://kamel402.github.io/kamel.io'
 const assetPrefix = `/${repo}`
 const basePath = `/${repo}`
 
