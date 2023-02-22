@@ -26,7 +26,7 @@ module.exports = {
         ]
       },
       images: {
-        loader: 'akamai',
-        path: '/',
+        loader: 'imgix',
+        path: 'kamelth.imgix.net',
       },
 };
