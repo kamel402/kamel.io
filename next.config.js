@@ -3,7 +3,7 @@
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let assetPrefix = ''
-let basePath = ''
+let basePath = '/'
 
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
@@ -27,6 +27,6 @@ module.exports = {
       },
       images: {
         loader: 'imgix',
-        path: 'kamelth.imgix.net',
+        path: '/https://kamel402.github.io/kamel.io',
       },
 };
